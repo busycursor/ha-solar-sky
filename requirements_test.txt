@@ -1,0 +1,3 @@
+pytest-homeassistant-custom-component==0.13.365
+# pulled in by the frontend dependency; pinned to the version Home Assistant 2026.9.2 uses
+home-assistant-frontend==20260826.7

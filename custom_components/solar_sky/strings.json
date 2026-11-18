@@ -1,0 +1,69 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Solar Sky",
+        "description": "Choose the solar power production sensor and select the direction the panels face. If Forecast.Solar is set up, tilt and azimuth are read from there.",
+        "data": {
+          "power_entity": "PV power sensor",
+          "tilt": "Panel tilt",
+          "azimuth": "Panel azimuth",
+          "temperature_entity": "Outdoor temperature (optional)",
+          "weather_entity": "Weather entity (optional)",
+          "wind_direction_entity": "Wind direction sensor (optional)",
+          "wind_speed_entity": "Wind speed sensor (optional)",
+          "backfill": "Fill in past cloud cover from history"
+        },
+        "data_description": {
+          "power_entity": "Production of the panels in W or kW (not net grid power).",
+          "tilt": "0 = flat, 90 = vertical. Error of 10 degrees or less works fine.",
+          "azimuth": "Compass direction the panels face: 90 = east, 180 = south, 270 = west.",
+          "temperature_entity": "Improves accuracy a few percent (hot panels make less power).",
+          "weather_entity": "Used to interpolate missing hours, and to control cloud movement if no wind sensor is provided.",
+          "wind_direction_entity": "Direction the wind comes from, in degrees.",
+          "wind_speed_entity": "Cloud cover moves across the sky following the wind speed, if provided here.",
+          "backfill": "Uses the power sensor's long-term statistics to compute cloud cover for the past, so the card has history right away."
+        }
+      }
+    },
+    "error": {
+      "entity_not_found": "That entity doesn't exist.",
+      "not_power": "That sensor doesn't report power in W or kW."
+    },
+    "abort": {
+      "already_configured": "This power sensor is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Solar Sky options",
+        "description": "Changing tilt or azimuth rebuilds the learned table from the clear days stored so far.",
+        "data": {
+          "tilt": "Panel tilt",
+          "azimuth": "Panel azimuth",
+          "temperature_entity": "Outdoor temperature (optional)",
+          "weather_entity": "Weather entity (optional)",
+          "wind_direction_entity": "Wind direction sensor (optional)",
+          "wind_speed_entity": "Wind speed sensor (optional)"
+        },
+        "data_description": {
+          "tilt": "0 = flat, 90 = vertical.",
+          "azimuth": "90 = east, 180 = south, 270 = west."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "cloud_cover": { "name": "Cloud cover" },
+      "expected_clear_sky_power": { "name": "Expected clear-sky power" },
+      "baseline": { "name": "Clear-sky baseline" },
+      "performance": { "name": "Output vs best clear day" },
+      "learning_progress": { "name": "Learning progress" },
+      "weather_cloud_coverage": { "name": "Weather cloud coverage" },
+      "wind_direction": { "name": "Weather wind direction" },
+      "wind_speed": { "name": "Weather wind speed" }
+    }
+  }
+}

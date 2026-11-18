@@ -1,0 +1,14 @@
+{
+  "entity": {
+    "sensor": {
+      "cloud_cover": { "default": "mdi:weather-partly-cloudy" },
+      "expected_clear_sky_power": { "default": "mdi:white-balance-sunny" },
+      "baseline": { "default": "mdi:solar-panel" },
+      "performance": { "default": "mdi:solar-panel-large" },
+      "learning_progress": { "default": "mdi:school-outline" },
+      "weather_cloud_coverage": { "default": "mdi:cloud-percent" },
+      "wind_direction": { "default": "mdi:compass-outline" },
+      "wind_speed": { "default": "mdi:weather-windy" }
+    }
+  }
+}

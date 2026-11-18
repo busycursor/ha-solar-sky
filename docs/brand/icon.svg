@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#3f86d9"/><stop offset="0.75" stop-color="#7fb4ea"/><stop offset="1" stop-color="#bcd9f5"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fffbe8"/><stop offset="0.35" stop-color="#ffe9a6"/><stop offset="1" stop-color="#ffe9a6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="disc"><circle cx="128" cy="128" r="118"/></clipPath>
+  </defs>
+  <g clip-path="url(#disc)">
+    <circle cx="128" cy="128" r="118" fill="url(#sky)"/>
+    <circle cx="104" cy="74" r="46" fill="url(#sun)"/>
+    <circle cx="104" cy="74" r="14" fill="#fffdf2"/>
+    <g fill="#f4f6f8">
+      <ellipse cx="150" cy="148" rx="52" ry="24"/><ellipse cx="128" cy="134" rx="28" ry="22"/><ellipse cx="166" cy="128" rx="30" ry="24"/>
+    </g>
+    <g fill="#c9d1da"><ellipse cx="152" cy="160" rx="46" ry="11"/></g>
+    <path d="M10 196 L40 182 L62 190 L78 172 L96 186 L112 178 L132 190 L160 176 L184 188 L204 170 L226 184 L246 178 L246 256 L10 256 Z" fill="#2a4a30"/>
+  </g>
+  <circle cx="128" cy="128" r="118" fill="none" stroke="#1d3557" stroke-opacity=".35" stroke-width="4"/>
+</svg>

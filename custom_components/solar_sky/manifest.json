@@ -1,0 +1,26 @@
+{
+  "domain": "solar_sky",
+  "name": "Solar Sky",
+  "after_dependencies": [
+    "forecast_solar",
+    "weather"
+  ],
+  "codeowners": [
+    "@busycursor"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "frontend",
+    "http",
+    "recorder",
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/busycursor/ha-solar-sky",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/busycursor/ha-solar-sky/issues",
+  "requirements": [
+    "numpy>=1.26.0"
+  ],
+  "version": "0.9.0"
+}
